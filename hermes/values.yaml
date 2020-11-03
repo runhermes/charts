@@ -8,7 +8,7 @@ image:
   repository: runhermes/hermes
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: v0.0.2
+  tag: v0.0.3
 
 environment: {}
 
@@ -54,6 +54,19 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
+probes:
+  enabled: false
+  readiness:
+    initialDelaySeconds: 30
+    periodSeconds: 10
+    timeoutSeconds: 1
+    failureThreshold: 3
+  liveness:
+    initialDelaySeconds: 30
+    periodSeconds: 10
+    timeoutSeconds: 1
+    failureThreshold: 3
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
