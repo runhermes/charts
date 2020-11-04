@@ -22,6 +22,14 @@ The [Parameters](./hermes/README.md#Parameters) section lists the parameters tha
 
 ### Install Hermes chart
 
+#### Through helm v3+
+
+```shell
+helm repo add hermes https://runhermes.github.io/charts
+
+helm install myhermes hermes/hermes
+```
+
 #### From git
 
 Clone this repository and install the chart

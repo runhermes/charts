@@ -6,7 +6,13 @@ Hermes is a Basecamp Pull Request Automation that manages the interaction betwee
 
 * Kubernetes 1.15+
 
-## Installing the Chart
+## Installing the Chart (Helm v3+)
+
+```shell
+helm repo add hermes https://runhermes.github.io/charts
+
+helm install myhermes hermes/hermes
+```
 
 ## Uninstalling the Chart
 
