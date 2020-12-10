@@ -2,7 +2,7 @@ apiVersion: v2
 name: hermes
 description: A Helm chart for Kubernetes
 
-mantainers:
+maintainers:
   - name: Rene
     email: renehr9102@protonmail.com
 
