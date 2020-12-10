@@ -18,7 +18,7 @@ Helm works as a package manager to run pre-configured Kubernetes resources. Usin
 
 Helm CLI is a Command Line Interface which will automate chart management and installation on your Kubernetes cluster. To install Helm, follow the [Helm installation instructions](https://helm.sh/docs/intro/install/).
 
-The [Parameters](./hermes/README.md#Parameters) section lists the parameters that can be configured during installation.
+The [Parameters](./charts/hermes/README.md#Parameters) section lists the parameters that can be configured during installation.
 
 ### Install Hermes chart
 
@@ -47,5 +47,5 @@ To uninstall/delete the Hermes release:
 
 ```shell
 # Replace <your-release-name> with the name of your deployed service
-helm uninstall <your-service-name>
+helm uninstall <your-release-name>
 ```
