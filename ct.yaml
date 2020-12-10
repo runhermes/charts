@@ -1,0 +1,4 @@
+remote: origin
+chart-dirs:
+  - .
+helm-extra-args: --timeout 600s
