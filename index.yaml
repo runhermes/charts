@@ -3,6 +3,19 @@ entries:
   hermes:
   - apiVersion: v2
     appVersion: v0.0.4
+    created: "2020-12-11T16:21:16.158454808Z"
+    description: A Helm chart for Kubernetes
+    digest: 05ad0ac2bab69f0ec7a0a718bf40a4fe0c684f7c0caca1a95b1d05b08bee4590
+    maintainers:
+    - email: renehr9102@protonmail.com
+      name: Rene
+    name: hermes
+    type: application
+    urls:
+    - https://github.com/runhermes/charts/releases/download/hermes-0.2.3/hermes-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: v0.0.4
     created: "2020-12-11T16:07:18.075235804Z"
     description: A Helm chart for Kubernetes
     digest: a144f5da4afed9da5eb3b0d371771f2b6bd6d98fc6a2938738044a13ecc21eb2
