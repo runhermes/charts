@@ -4,8 +4,6 @@ metadata:
   name: {{ include "hermes.fullname" . }}
   labels:
     {{- include "hermes.labels" . | nindent 4 }}
-  annotations:
-    checksum/config: {{ include (print $.Template.BasePath "/secrets.yaml") . | sha256sum }}
 spec:
 {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
@@ -17,6 +15,7 @@ spec:
     metadata:
     {{- with .Values.podAnnotations }}
       annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/secrets.yaml") . | sha256sum }}
         {{- toYaml . | nindent 8 }}
     {{- end }}
       labels:
